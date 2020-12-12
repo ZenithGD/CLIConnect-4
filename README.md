@@ -9,6 +9,10 @@ This little console app simulates a Connect 4 game in the terminal (UNIX-only fo
 
 The game works with a little turn system, where the player inputs the column where the new piece should be inserted. For now, the system is very basic, but i'm planning to add networking support and a little room system.
 
+## Compiling
+
+The compilation process is very simple, you can do it in any UNIX-like system, using the 'make' command with the provided Makefile at the root directory. The object files will be created in 'obj' and the binary will be created in the 'bin' directory. If you want to delete those extra folders, you can use 'make clean'.
+
 ## Changes:
 
 * Version 1.0:
