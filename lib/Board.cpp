@@ -7,6 +7,8 @@
 using namespace std;
 
 // Pre: cols > 0 && rows > 0 && playerCount >= 2
+// Post: Inicializa los campos de la instancia creada y aloja un espacio en memoria
+//		 para almacenar el tablero de juego
 Board::Board(int cols, int rows, int playerCount = 2) 
 {
     this->cols = cols;
@@ -64,6 +66,16 @@ bool Board::isFull()
 int Board::playerNumber() 
 {
     return playerCount;
+}
+
+int Board::getColumns() 
+{
+	return cols;
+}
+
+int Board::getRows() 
+{
+	return rows;
 }
 
 std::ostream& operator<<(std::ostream& out, const Board& b) 

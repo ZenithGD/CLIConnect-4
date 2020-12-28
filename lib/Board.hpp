@@ -45,6 +45,12 @@ const int MAX_WIDTH = 6;
 			// devuelve el número de jugadores
             int playerNumber();
 
+			// devuelve el número de columnas
+			int getColumns();
+
+			// devuelve el número de columnas
+			int getRows();
+
 			// muestra el tablero de juego
             friend std::ostream& operator<<(std::ostream& out, const Board& b);
     };
